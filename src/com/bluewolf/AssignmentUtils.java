@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class AssignmentUtils
 {
-	/* 
+/* 
 	 * Question 1:
 	 * Given an array of integers between 1 and 1,000,000.
 	 * One integer is in the array twice. Find the duplicate.
@@ -174,25 +174,5 @@ public class AssignmentUtils
 		int tempVal = arr[indexToSwap];
 		arr[indexToSwap] = arr[randomIndex];
 		arr[randomIndex] = tempVal;
-	}
-	
-	public static void main(String[] args)
-	{
-		AssignmentUtils as = new AssignmentUtils();
-		int dup = as.findDuplicate(new int[]
-				{3,2,1,4,5,6,7,8,9,10,11,12,13,14,15,1000000,17,18,19,20,1000000});
-		System.out.println(dup);
-		
-		Character nonRep = as.findFirstNonRepeatedChar("DDDEABCFGHIJKLMNOLPOERA");
-		System.out.println(nonRep);
-		
-		int[] deck = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52};
-		as.shuffleCards(deck);
-		for(int i=0;i<52; i++)
-		{
-			System.out.print(deck[i]+",");
-		}
-				
-		
 	}
 }
