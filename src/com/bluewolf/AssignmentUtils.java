@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class AssignmentUtils
 {
-/* 
+	/* 
 	 * Question 1:
 	 * Given an array of integers between 1 and 1,000,000.
 	 * One integer is in the array twice. Find the duplicate.
@@ -125,6 +125,12 @@ public class AssignmentUtils
 		}
 		return charMap;
 	}
+	
+	/*
+	 * Question 3: 
+	 * A standard deck of 52 cards is represented in an array. Each card is 
+	 * represented as an integer. Write a method to shuffle the cards.
+	 */
 	
 	/**
 	 * shuffleCards : int[] -> void
