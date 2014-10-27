@@ -2,7 +2,7 @@ Bluewolf_Assignment
 ===================
 
 This repository consists of problems from the assignment assigned by Bluewolf. 
-The project uses Java SE 1.8
+The project uses Java SE 1.8 version.
 
 Question 1 : findDuplicate from any array of integers
 Complexity : O(k) where k is the index at which the duplicate element is found.
