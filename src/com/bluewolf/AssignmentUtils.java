@@ -21,8 +21,8 @@ public class AssignmentUtils
 
 	/**
 	 * findDuplicate : int[] -> int
-	 * @param inputArray : The array of integers of arbitrary length
-	 * and containing integers between 1 and 1,000,000
+	 * @param inputArray : An array of integers of arbitrary length
+	 * containing integers between 1 and 1,000,000
 	 * @return int : The first element which has occured twice in the array
 	 * or -1 if there is no such element
 	 * @TimeComplexity: O(k) where k is the index at which the duplicate
@@ -64,14 +64,14 @@ public class AssignmentUtils
 	 * is the number of possible characters.
 	 * @OverallComplexity: O(k + n) where n is the length of the String.
 	 * O(n) is the complexity of the function 'getOnlyNonRepeatedChars'
-	 * which is invoked once in this method. Pease refer the Contract and
+	 * which is invoked once in this method. Please refer the Contract and
 	 * Purpose Statement of 'getOnlyNonRepeatedChars' for more details 
 	 */
 	public Character findFirstNonRepeatedChar(String str)
 	{
 		if(str == null)
 		{
-			String desc ="Cannot find non repeated character from null String";
+			String desc ="Cannot find non repeated character in null String";
 			NullPointerException nullStrExc = new NullPointerException(desc);
 			throw nullStrExc;
 		}
@@ -101,7 +101,7 @@ public class AssignmentUtils
 	 * to be found.
 	 * @return Map<Character, Integer> : The Map having Character which appear
 	 * in the String as a key and its index in String 'str' as a value. The 
-	 * Character which appear twice or more have their value as -1. Therefore, 
+	 * Character which appears twice or more have their value as -1. Therefore, 
 	 * the Characters which appear once have a valid index and the lowest index 
 	 * is the first non repeated Character in the String 'str'.
 	 * @TimeComplexity: O(n) where n is the length of the String. 
@@ -147,7 +147,7 @@ public class AssignmentUtils
 		int arrLen = deckOfCards.length;
 		if(arrLen != 52)
 		{
-			String improperDeckMessage = "A Deck must contain 52 cards";
+			String improperDeckMessage ="Not a standard Deck!";
 			IllegalArgumentException improperDeck = 
 					new IllegalArgumentException(improperDeckMessage);
 			throw improperDeck;
